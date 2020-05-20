@@ -25,6 +25,8 @@
 ## groups_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
+|user_id|reference|null: false, foreign_key: true|
+|group_id|reference|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :group
@@ -33,9 +35,9 @@
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|content|text|
+|text|text|
 |image|string|
-|group|reference|null: false,coreign_key,foreign_key:true|
+|group|reference|null: false,foreign_key:true|
 |user|reference|null:false,foreign_key:true|
 
 ### Association
