@@ -25,8 +25,6 @@
 ## groups_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user|reference|null: false, foreign_key: true|
-|group|reference|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :group
