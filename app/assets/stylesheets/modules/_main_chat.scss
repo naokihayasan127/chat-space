@@ -10,12 +10,12 @@
     justify-content: space-between;
 
     .group {
-
       &__name {
       font-size: 20px;
       color: #333333;
       padding: 35px 0 15px 40px;
     }
+
       &__assign {
       font-size: 12px;
       color: #999999;
@@ -39,21 +39,25 @@
   &__post-list{
     background: #fafafa;
     height: calc(100vh - 100px - 90px);
+
     .post-info {
       padding-top: 35px;
       margin-left: 40px;
       display: flex;
+
       &__name {
         color: #333333;
         font-size: 16px;
         font-weight: bold;
       }
+
       &__date {
         color: #999999;
         font-size: 12px;
         padding-left: 10px;
       }
     }
+    
     .post-message {
       color: #434A54;
       font-size: 14px;
