@@ -6,20 +6,20 @@
     background-color: $White;
     height: 100px;
     border-bottom: 1px solid #eeeeee ;
-    display: flex;
-    justify-content: space-between;
+    display: $Flexts;
+    justify-content:$Contents;
 
     .group {
       &__name {
       font-size: 20px;
-      color: #333333;
+      color:$Blackgray ;
       padding: 35px 0 15px 40px;
     }
 
       &__assign {
       font-size: 12px;
       color: #999999;
-      padding-left: 40px;
+      padding-left: $Pxs;
     }
   }
 
@@ -42,11 +42,11 @@
 
     .post-info {
       padding-top: 35px;
-      margin-left: 40px;
-      display: flex;
+      margin-left: $Pxs;
+      display: $Flexts;
 
       &__name {
-        color: #333333;
+        color:$Blackgray;
         font-size: $Fonts;
         font-weight: bold;
       }
@@ -61,7 +61,7 @@
     .post-message {
       color: #434A54;
       font-size: 14px;
-      margin-left: 40px;
+      margin-left:$Pxs;
       margin-top: 12px;
     }
   }
@@ -70,12 +70,12 @@
     background-color: #d2d2d2;
     height: 90px;
     display: $Flexts;
-    align-items: center;
+    align-items: $Items;
     padding: 0 40px;
 
     .form {
       display: $Flexts;
-      justify-content: space-between;
+      justify-content: $Contents;
       width: $Widths;
 
       &__contents {

@@ -6,17 +6,17 @@
     // ここで疑似クラスを使う理由？
     height: 100px;
     display: $Flexts;
-    align-items: center;
+    align-items: $Items;
     padding: 0 20px;
 
     .top-items {
       height: 20px;
       width: 260px;
       display: $Flexts;
-      justify-content: space-between;
+      justify-content: $Contents;
 
       &__name {
-        color: #ffffff;
+        color: $White;
         font-weight: bold;
         width: 200px;
       }
@@ -24,7 +24,7 @@
         width: 60px;
 
         &--btn {
-          color: #ffffff;
+          color:$White;
           padding-left: 5px;
         }
       }
@@ -37,7 +37,7 @@
     height: calc(100vh - 100px);
 
     .groups {
-      color:#ffffff ;
+      color:$White ;
       padding: 0 20px;
 
       &__name {
