@@ -5,14 +5,14 @@
   &__user-name {
     // ここで疑似クラスを使う理由？
     height: 100px;
-    display: flex;
+    display: $Flexts;
     align-items: center;
     padding: 0 20px;
 
     .top-items {
       height: 20px;
       width: 260px;
-      display: flex;
+      display: $Flexts;
       justify-content: space-between;
 
       &__name {

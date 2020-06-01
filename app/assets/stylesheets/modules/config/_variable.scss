@@ -1,15 +1,5 @@
 $White: #ffffff;
 $Widths:100% ;
-
-
-.chat-main {
-  background-color : $White;
-
-  .form{
-  width: $Widths; 
-   
-    &__contents {
-    width: $Widths;
-    }
-  }
-}
+$Fonts: 16px;
+$Flexts: flex;
+$Heights: 50px;
