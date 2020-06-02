@@ -1,0 +1,53 @@
+.side-bar {
+  width: 300px;
+  background-color: #253141;
+
+  &__user-name {
+    // ここで疑似クラスを使う理由？
+    height: 100px;
+    display: $Flexts;
+    align-items: $Items;
+    padding: 0 20px;
+
+    .top-items {
+      height: 20px;
+      width: 260px;
+      display: $Flexts;
+      justify-content: $Contents;
+
+      &__name {
+        color: $White;
+        font-weight: bold;
+        width: 200px;
+      }
+      &__icons {
+        width: 60px;
+
+        &--btn {
+          color:$White;
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+}
+
+  .side-bar__group-list {
+    background-color: #2f3e51;
+    height: calc(100vh - 100px);
+
+    .groups {
+      color:$White ;
+      padding: 0 20px;
+
+      &__name {
+        font-size: 15px;
+        padding:20px 0 0;
+      }
+
+      &__message {
+        font-size: 11px;
+        margin-bottom: 40px;
+      }
+    }
+  }

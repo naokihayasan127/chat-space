@@ -1,0 +1,18 @@
+.side-bar
+  .side-bar__user-name
+    .top-items
+      .top-items__name
+        なおき
+      .top-items__icons
+        = link_to '#' do
+          = icon('far', 'edit', class: "top-items__icons--btn")
+          -# iconの記述の意味がわからない。クラスを作っている。
+        = link_to '#' do
+          = icon('fas', 'cog', class: "top-items__icons--btn")
+
+  .side-bar__group-list
+    .groups
+      .groups__name
+        techcamp
+      .groups__message
+        まだメッセージがありません
