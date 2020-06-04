@@ -4,15 +4,17 @@
       .top-items__name
         = current_user.name
       .top-items__icons
-        = link_to '#' do
+        = link_to new_group_path(current_user)do
           = icon('far', 'edit', class: "top-items__icons--btn")
           -# iconの記述の意味がわからない。クラスを作っている。
         = link_to edit_user_path(current_user) do
           = icon('fas', 'cog', class: "top-items__icons--btn")
 
   .side-bar__group-list
-    .groups
-      .groups__name
-        techcamp
-      .groups__message
-        まだメッセージがありません
+    - current_user.groups.each do |group|
+      .groups
+        =link_to '#' do
+          .groups__name
+            =group.name
+          .groups__message
+          まだメッセージがありません

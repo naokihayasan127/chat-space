@@ -36,8 +36,8 @@
     background-color: #2f3e51;
     height: calc(100vh - 100px);
 
-    .groups {
-      color:$White ;
+    .groups{
+      color: $White;
       padding: 0 20px;
 
       &__name {
@@ -51,3 +51,7 @@
       }
     }
   }
+  
+a{
+ color:$White;
+}
