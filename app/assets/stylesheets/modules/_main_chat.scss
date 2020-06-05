@@ -39,6 +39,7 @@
   &__post-list{
     background: #fafafa;
     height: calc(100vh - 100px - 90px);
+    overflow: scroll;
 
     .post-info {
       padding-top: 35px;
@@ -94,7 +95,7 @@
           font-size: 25px;
           display: block;
           position: absolute;
-          right: 10px;
+          right: 130px;
           line-height: 50px;
 
           &__file {
