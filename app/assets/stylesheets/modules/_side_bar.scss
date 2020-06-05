@@ -35,10 +35,13 @@
   .side-bar__group-list {
     background-color: #2f3e51;
     height: calc(100vh - 100px);
+    text-decoration: none;
+    overflow: scroll;
 
     .groups{
       color: $White;
       padding: 0 20px;
+    
 
       &__name {
         font-size: 15px;
@@ -54,4 +57,5 @@
   
 a{
  color:$White;
+ text-decoration: none;
 }
