@@ -1,6 +1,7 @@
 $(function(){
   function buildHTML(message){
-    if (message.image) {
+    if(message.image){
+    let img = '<img class = "form_image" src="${message.image}"'
     let html = 
     `<div class="messagebox">
       <div class="post-info">
@@ -15,11 +16,12 @@ $(function(){
         <p class="Message__content">
           ${message.content}
         </p>
-        <img class = "form_image" src="${message.image}"}
+          ${img}
       </div>           
     </div>`
     return html;
-  } else {
+  }
+   else {
     let html = 
     `<div class="messagebox">
       <div class="post-info">
@@ -53,14 +55,21 @@ $('.form').on('submit', function(e){
     contentType: false
   })
   .done(function(data){
+    let chatmain = '.chat-main__post-list';
     let html = buildHTML(data);
-    $('.chat-main__post-list').append(html);
-    $('.chat-main__post-list').animate({ scrollTop: $('.chat-main__post-list')[0].scrollHeight});
+    $(chatmain).append(html);
+    $(chatmain).animate({ scrollTop: $(chatmain)[0].scrollHeight});
     $('form')[0].reset();
     $('.submit').prop('disabled', false);
     })
     .fail(function() {
       alert("メッセージ送信に失敗しました");
-  });
+     })
+     .always(function(){
+      let chatmain ='.chat-main__post-list'
+      $('form')[0].reset();
+      $(chatmain).animate({ scrollTop: $(chatmain)[0].scrollHeight});
+      $('.submit').prop('disabled', false);
+    });
    });
 });
