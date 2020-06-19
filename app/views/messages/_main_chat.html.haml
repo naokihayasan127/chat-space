@@ -11,24 +11,8 @@
 
   .chat-main__post-list
     = render @messages
-    -# .post-info
-    -#   .post-info__name
-    -#     なおき２
-    -#   .post-info__date
-    -#     2020/5/25(Wed)17:50
-    -# .post-message
-    -#   こんばんは
-
-    -# .post-info
-    -#   .post-info__name
-    -#     はやかわ
-    -#   .post-info__date
-    -#     2020/5/28(Fri)10:00
-    -# .post-message
-    -#   おはようございます
-
   .chat-main__post-form
-    = form_with model: [@group, @message], html: {class: "form"}, local: true do |f|
+    = form_for [@group, @message], html: {class: "form"} do |f|
       .form__contents
         = f.text_field :content, class: 'form__contents__text', placeholder: 'type a message'
         = f.label :image, class: 'form__contents__image' do
