@@ -1,7 +1,7 @@
 $(function(){
   function buildHTML(message){
     if(message.image){
-    let img = '<img class = "form_image" src="${message.image}"'
+    let img = ( message.image )? `<img class= "form_image" src=${message.image}> `: ''
     let html = 
     `<div class="messagebox">
       <div class="post-info">
@@ -16,10 +16,10 @@ $(function(){
         <p class="Message__content">
           ${message.content}
         </p>
-          ${img}
+        ${img}
       </div>           
     </div>`
-    return html;
+    return html;  
   }
    else {
     let html = 
@@ -66,9 +66,6 @@ $('.form').on('submit', function(e){
       alert("メッセージ送信に失敗しました");
      })
      .always(function(){
-      let chatmain ='.chat-main__post-list'
-      $('form')[0].reset();
-      $(chatmain).animate({ scrollTop: $(chatmain)[0].scrollHeight});
       $('.submit').prop('disabled', false);
     });
    });
