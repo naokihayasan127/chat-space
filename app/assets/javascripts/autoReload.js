@@ -43,7 +43,6 @@ $(function(){
 
 let reloadMessages = function() {
   let last_message_id = $('.messagebox:last').data("message-id");
-  console.log(last_message_id)
   $.ajax({
     //ルーティングで設定した通り/groups/id番号/api/messagesとなるよう文字列を書く
     url: "api/messages",
@@ -66,7 +65,6 @@ let reloadMessages = function() {
   .fail(function() {
     alert('error');
   });
- 
 };
 setInterval(reloadMessages, 7000);
 });

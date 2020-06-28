@@ -43,7 +43,7 @@ $(function(){
   };
 }
                 
-$('form').on('submit', function(e){
+$('.form').on('submit', function(e){
   e.preventDefault();
   let formData = new FormData(this);
   let url = $(this).attr('action');
@@ -60,7 +60,7 @@ $('form').on('submit', function(e){
     let html = buildHTML(data);
     $(chatmain).append(html);
     $(chatmain).animate({ scrollTop: $(chatmain)[0].scrollHeight});
-    $('form')[0].reset();
+    $('.form')[0].reset();
     })
     .fail(function() {
       alert("メッセージ送信に失敗しました");
