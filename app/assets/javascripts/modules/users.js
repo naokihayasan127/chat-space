@@ -1,5 +1,4 @@
 $(function() {
-  console.log("hoge")
   function addUser(user) {
   let html = `
               <div class="ChatMember">
