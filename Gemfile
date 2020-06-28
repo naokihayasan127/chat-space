@@ -42,6 +42,7 @@ group :development, :test do
    gem 'capistrano3-unicorn'
 end
 
+
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
@@ -71,6 +72,7 @@ gem "haml-rails", ">= 1.0", '<= 2.0.1'
  gem 'pry-rails'
 
  gem 'carrierwave'
+ gem 'fog-aws'
  gem 'mini_magick'
  gem 'jquery-rails'
 
